@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Review Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="order">
+    <div class="space">
+      <div>
+      <label for="selectrecord"></label>
+      <select id="selectrecord" name="selectrecord">
+        <option value="choice1">Record</option>
+        <option value="choice2">Choice 2</option>
+        <option value="choice3">Choice 3</option>
+      </select>
+      </div>
+      <div class="end">
+      <label for="selectreview">View:</label>
+      <select id="selectreview" name="selectreview">
+        <option value="choice1">Review Orders</option>
+        <option value="choice2">Choice 2</option>
+        <option value="choice3">Choice 3</option>
+      </select> 
+      </div>
+    </div>
+
+    <form action="/review_order" method="post">
+      <div class="grid">
+        <div> 
+          <p class="label bold">Customer: </p>
+          <input type="text" name="customer_name" placeholder="Customer Name">
+        </div>
+        <div>
+          <p class="label bold">Address:</p>
+          <input type="text" name="address" placeholder="Address">
+        </div>
+        <div>
+          <p class="label bold">Employee:</p>
+          <input type="text" name="employee" placeholder="Employee">
+        </div>
+        <div>
+          <p class="label bold">City:</p>
+          <input type="text" name="city" placeholder="City">
+        </div>
+        <div>
+          <p class="label bold">Order Date:</p>
+          <input type="date" name="order_date" placeholder="Order Date">
+        </div>
+        <div>
+          <p class="label bold">Region</p>
+          <input type="text" name="region" placeholder="Region">
+        </div>
+        <div>
+          <p class="label bold">Required Date:</p>
+          <input type="date" name="required_date" placeholder="Required Date">
+        </div>
+        <div>
+          <p class="label bold">Postal Code:</p>
+          <input type="text" name="postal_code" placeholder="Postal Code">
+        </div>
+        <div>
+          <p class="label bold">Shipped Date</p>
+          <input type="date" name="shipped_date" placeholder="Shipped Date">
+        </div>
+        <div>
+          <p class="label bold">Ship Country</p>
+          <input type="text" name="ship_country" placeholder="Ship Country">    
+        </div>
+      </div>
+    </form>
+    
+    <div class="order-details">
+        <div class="product-row">
+            <p class="blue">Product Name</p>
+            <p class="lightblue">Grandma's Boysenberry Spread</p>
+            <p class="lightblue">Tofu</p>
+            <p class="lightblue">Teatime Chocolate Biscuits</p>
+        </div>
+    
+        <div class="product-row">
+            <p class="blue">Unit Price</p>
+            <p>$25.00</p>
+            <p>$23.25</p>
+            <p>$9.20</p>
+        </div>
+    
+        <div class="product-row">
+            <p class="blue">Quantity</p>
+            <p>20</p>
+            <p>20</p>
+            <p>10</p>
+        </div>
+        <div class="product-row">
+          <p class="blue">Discount</p>
+          <p>25.00%</p>
+          <p>25.00%</p>
+          <p>25.00%</p>
+        </div>
+        <div class="product-row">
+          <p class="blue">Product Category Name</p>
+          <p>Condiments</p>
+          <p>Produce</p>
+          <p>Confections</p>
+        </div>
+        <div class="product-row">
+          <p class="blue">Product Supplier Company Name</p>
+          <p>Grandma Kelly's Homestead</p>
+          <p>Mayumi's</p>
+          <p>Specialty Biscuits, Ltd</p>
+        </div>
+        <div class="product-row">
+          <p class="blue">Extended Price</p>
+          <p>$375.00</p>
+          <p>$348.75</p>
+          <p>$69.00</p>
+        </div>
+    </div>
+    
+    <br>
+    
+    
+    
+    
+    
+    
+
+    <div class="grid">
+      <div>
+
+      </div>
+      <p class="bold">Subtotal:    $792.75</p>
+      <div>
+        <p class="label bold">Ship Name:</p><input type="text" name="ship_name" placeholder="Ship Name">
+      </div>
+      <div>
+        <p class="bold">Total: $907.13</p>
+      </div>
+
+      <div>
+        <label for="selectChoice" class="bold">Ship via:</label>
+        <select id="selectChoice" name="selectChoice">
+        <option value="choice1">United Package</option>
+        <option value="choice2">Choice 2</option>
+        <option value="choice3">Choice 3</option>
+          </select>
+      </div>
+      <div>
+        <p class="bold">Total: $907.13</p>
+      </div>
+    
+    
+      <div>
+        <p class="blue">* - indicates a required field</p>
+      </div>
+      <div >
+        <input type="submit" value="Ok" class="input">
+        <input type="submit" value="Delete" class="input">
+        <input type="submit" value="Cancel" class="input">
+      </div>
+    </div>
+      
+    
+         
+      
+  </div>
+</body>
+</html>
+
